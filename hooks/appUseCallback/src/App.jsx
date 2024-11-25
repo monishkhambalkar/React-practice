@@ -1,27 +1,7 @@
-import React, { useState, useCallback } from 'react';
-import './App.css'
-import ProductItem from './ProductItem';
+import "./App.css";
+import React from "react";
+import Task from "./Task/Task";
 
-function App() {
-  const [cart, setCart] = useState([]);
-
-  const addToCart = useCallback((product) => {
-    setCart(prevCart => [...prevCart, product]);
-  }, []);
-
-  return (
-    <div>
-      {products.map(product => (
-        <ProductItem
-          key={product.id}
-          product={product}
-          addToCart={addToCart}
-        />
-      ))}
-    </div>
-  )
-
+export default function App() {
+  return <Task />;
 }
-
-
-export default App
