@@ -3,3 +3,7 @@
 // npm install
 
 // npm run dev
+
+// touch .gitignore
+
+// npm install @reduxjs/toolkit react-redux
