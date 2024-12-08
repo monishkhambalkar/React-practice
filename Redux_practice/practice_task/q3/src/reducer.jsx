@@ -9,8 +9,11 @@ const initialState = {
 };
 
 const fomReducer = (state = initialState, action) => {
+  console.log(action.type);
   switch (action.type) {
-    case "UPDATE_FORM":
+    case UPDATE_FORM:
+      console.log(state);
+      console.log(action);
       return {
         ...state,
         formData: {
