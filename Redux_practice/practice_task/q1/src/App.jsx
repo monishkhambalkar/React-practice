@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "./counterActions";
 
