@@ -9,15 +9,11 @@ const todoSlice = createSlice({
   initialState,
   reducers: {
     addTask: (state, action) => {
-      console.log("state ", state);
-      console.log("action ", action);
       state.tasks.push({
         id: Date.now(),
         text: action.payload,
         completed: false,
       });
-      console.log("state after ", state);
-      console.log("state text ", state.text);
     },
     toggleTask: (state, action) => {
       const task = state.tasks.find((task) => task.id === action.payload);
