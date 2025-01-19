@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.tab-button {
+  width: 120px; /* Set consistent width */
+  text-align: center;
+}

@@ -1,7 +1,10 @@
 import React from "react";
-
 const AboutTab = () => {
-  return <p>Welcome to my profile!</p>;
+  return (
+    <>
+      <h1>Welcome to my Profile!</h1>
+    </>
+  );
 };
 
 export default AboutTab;
